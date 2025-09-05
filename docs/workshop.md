@@ -9,11 +9,13 @@
 
 ## Introduction (2 minutes)
 
-As engineering leaders, we are constantly seeking ways to increase team velocity and shorten the "idea-to-product" cycle. This workshop demonstrates a powerful workflow within Firebase Studio where an AI assistant acts as a collaborative partner, fulfilling the roles of a product manager, a tech lead, and a pair programmer.
+Many developers today engage in what could be called "vibe coding"—starting with a vague idea, writing code until it feels right, and often ending up with a solution that's disconnected from user needs or business goals. While this can be fun, it's not a scalable or professional engineering practice.
+
+This workshop demonstrates how to bridge that gap. We'll showcase a powerful workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming a developer's intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create an implementation plan, and write production-ready code.
 
-**Key Takeaway:** This is not just about code generation. It's about partnering with AI to streamline the entire development lifecycle, enabling rapid validation of ideas and significantly boosting developer productivity.
+**Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to streamline the entire development lifecycle, turning a developer's initial "vibe" into a well-defined, rapidly validated product, and significantly boosting professional productivity.
 
 ---
 
