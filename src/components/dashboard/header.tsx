@@ -1,5 +1,4 @@
 import { Repeat, User } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,11 +31,9 @@ export default function Header({ userName }: HeaderProps) {
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="secondary" size="icon" className="rounded-full">
-              <Avatar>
-                <AvatarImage src={`https://picsum.photos/seed/${userName.replace(/\s/g, '')}/40`} alt={userName} />
-                <AvatarFallback>{userName.charAt(0)}</AvatarFallback>
-              </Avatar>
+            <Button variant="ghost" className="flex items-center gap-2">
+              <span className="hidden sm:inline">{userName}</span>
+              <User className="h-5 w-5" />
               <span className="sr-only">Toggle user menu</span>
             </Button>
           </DropdownMenuTrigger>
