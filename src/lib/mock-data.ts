@@ -33,10 +33,10 @@ export const MOCK_DATA: FinancialProfile = {
     { id: 'txn-015', date: '2024-07-30', description: 'Invoice Payment Received', amount: 2800.00, accountId: 'acc-001', category: 'Income' },
   ],
   creditAccounts: [
-    { id: 'ca-001', lender: 'MOHELA', type: 'student_loan', balance: -18000, payment_status: 'On-time' },
-    { id: 'ca-002', lender: 'Chase Freedom Flex', type: 'credit_card', balance: -2100, limit: 5000, payment_status: 'On-time' },
-    { id: 'ca-003', lender: 'Discover it Cash Back', type: 'credit_card', balance: -1500, limit: 3000, payment_status: 'Late (1)' },
-    { id: 'ca-004', lender: 'Capital One Quicksilver', type: 'credit_card', balance: -1700, limit: 4000, payment_status: 'On-time' },
+    { id: 'ca-001', lender: 'MOHELA', type: 'student_loan', balance: -18000, payment_status: 'On-time', apr: 5.75, minPayment: 140, dueDate: '2024-09-15' },
+    { id: 'ca-002', lender: 'Chase Freedom Flex', type: 'credit_card', balance: -2100, limit: 5000, payment_status: 'On-time', apr: 22.99, minPayment: 75, dueDate: '2024-09-20' },
+    { id: 'ca-003', lender: 'Discover it Cash Back', type: 'credit_card', balance: -1500, limit: 3000, payment_status: 'Late (1)', apr: 24.99, minPayment: 50, dueDate: '2024-09-08' },
+    { id: 'ca-004', lender: 'Capital One Quicksilver', type: 'credit_card', balance: -1700, limit: 4000, payment_status: 'On-time', apr: 21.49, minPayment: 60, dueDate: '2024-09-12' },
   ],
   creditHistory: `
     Report for Amina (ID: user-001)

@@ -28,6 +28,9 @@ export interface CreditAccount {
   balance: number;
   limit?: number;
   payment_status: string;
+  apr?: number;
+  minPayment?: number;
+  dueDate?: string;
 }
 
 export interface FinancialProfile {

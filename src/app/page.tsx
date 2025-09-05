@@ -1,13 +1,14 @@
 import { MOCK_DATA } from '@/lib/mock-data';
-import type { Account, Asset, Transaction } from '@/types';
+import type { Account, Asset, Transaction, CreditAccount } from '@/types';
 import Header from '@/components/dashboard/header';
 import BalanceOverview from '@/components/dashboard/balance-overview';
 import TransactionHistory from '@/components/dashboard/transaction-history';
 import FinancialSummary from '@/components/dashboard/financial-summary';
 import CreditReport from '@/components/dashboard/credit-report';
+import CreditUtilization from '@/components/dashboard/credit-utilization';
 
 export default function Home() {
-  const { accounts, assets, transactions, user } = MOCK_DATA;
+  const { accounts, assets, transactions, user, creditAccounts } = MOCK_DATA;
 
   return (
     <div className="flex min-h-screen w-full flex-col">
@@ -21,15 +22,19 @@ export default function Home() {
 
         <BalanceOverview
           accounts={accounts as Account[]}
-          assets={assets as Asset[]}
         />
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-            <TransactionHistory 
-                transactions={transactions as Transaction[]}
-                accounts={accounts as Account[]} 
-            />
-            <CreditReport />
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+            <div className="lg:col-span-2">
+                <TransactionHistory 
+                    transactions={transactions as Transaction[]}
+                    accounts={accounts as Account[]} 
+                />
+            </div>
+            <div className="space-y-4 lg:space-y-8">
+                <CreditReport />
+                <CreditUtilization creditAccounts={creditAccounts as CreditAccount[]} />
+            </div>
         </div>
       </main>
     </div>

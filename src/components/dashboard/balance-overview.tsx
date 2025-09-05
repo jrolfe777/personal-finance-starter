@@ -1,16 +1,15 @@
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import type { Account, Asset } from '@/types';
+import type { Account } from '@/types';
 import { useMemo } from 'react';
-import { Landmark, PiggyBank, Scale } from 'lucide-react';
+import { Landmark, PiggyBank } from 'lucide-react';
 
 interface BalanceOverviewProps {
   accounts: Account[];
-  assets: Asset[];
 }
 
-export default function BalanceOverview({ accounts, assets }: BalanceOverviewProps) {
+export default function BalanceOverview({ accounts }: BalanceOverviewProps) {
   const { totalCash, totalDebt } = useMemo(() => {
     const totalCash = accounts
       .filter((acc) => acc.type === 'checking' || acc.type === 'savings')
