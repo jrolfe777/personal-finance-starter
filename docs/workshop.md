@@ -1,0 +1,104 @@
+# AI-Accelerated Prototyping: A 30-Minute Workshop
+
+**Audience:** Technology & Engineering Executives (Directors, VPs)
+**Goal:** Understand a mature method of leveraging a large language model (LLM) as an AI partner to accelerate application prototyping, from concept to code.
+**Theme:** Personal Finance
+**Platform:** Firebase Studio
+
+---
+
+## Introduction (2 minutes)
+
+As engineering leaders, we are constantly seeking ways to increase team velocity and shorten the "idea-to-product" cycle. This workshop demonstrates a powerful workflow within Firebase Studio where an AI assistant acts as a collaborative partner, fulfilling the roles of a product manager, a tech lead, and a pair programmer.
+
+We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create an implementation plan, and write production-ready code.
+
+**Key Takeaway:** This is not just about code generation. It's about partnering with AI to streamline the entire development lifecycle, enabling rapid validation of ideas and significantly boosting developer productivity.
+
+---
+
+## Part 1: The AI as a Product Manager (8 minutes)
+
+In this section, we will task the AI with thinking through the product requirements for our new feature, just as a Product Manager would.
+
+### Step 1: Create the Initial Product Requirements Document (PRD)
+
+First, let's have the AI create a first draft of a PRD for a "Debt Payoff Calculator". This feature will help users strategize how to pay off a specific debt.
+
+**Action:** Enter the following prompt into the chat:
+
+> Create a Product Requirements Document in a new file, `docs/debt-calculator.md`. The feature is a "Debt Payoff Calculator" that lets a user select a debt, input their desired monthly payment, and see a projection of their payoff timeline. The PRD should include user stories and feature requirements.
+
+**(Wait for the AI to generate the file.)**
+
+**Takeaway:** The AI has instantly created a structured requirements document. This process, which can often take hours or days of meetings and writing, is completed in seconds. It provides a solid foundation for the feature and a "single source of truth" for the team, ensuring alignment from the very beginning.
+
+### Step 2: Refine the PRD with Success Metrics
+
+A good PM knows that a feature isn't complete without a way to measure its success. Let's ask the AI to refine the PRD.
+
+**Action:** Enter the following prompt:
+
+> This is a good start. Now, add a "Success Metrics" section to `docs/debt-calculator.md` to help us understand if the feature is successful.
+
+**(Wait for the AI to update the file.)**
+
+**Takeaway:** This demonstrates the iterative and collaborative nature of the AI partnership. You can refine and enhance the product specification with simple, natural language commands. The AI understands the context and modifies the existing document, acting as a true partner in the product definition phase.
+
+---
+
+## Part 2: The AI as a Tech Lead (5 minutes)
+
+Now, let's switch hats from product to engineering. A good tech lead translates product requirements into a concrete technical plan. We'll ask the AI to do just that.
+
+### Step 3: Generate the Implementation Plan
+
+**Action:** Enter the following prompt:
+
+> Based on the PRD at `docs/debt-calculator.md`, create a technical implementation plan in a new file named `docs/debt-calculator-plan.md`. Break down the work into 3-4 discrete steps for a Next.js app using Genkit for the AI component.
+
+**(Wait for the AI to generate the new plan file.)**
+
+**Takeaway:** The AI has successfully bridged the gap between the "what" (the PRD) and the "how" (the technical plan). It has analyzed the requirements and proposed a logical sequence of engineering tasks, including creating new UI components and AI flows. This provides immediate clarity for the development team and creates a ready-to-use backlog of work.
+
+---
+
+## Part 3: The AI as a Pair Programmer (15 minutes)
+
+This is where the plan turns into product. We will now instruct the AI to execute the implementation plan it just created.
+
+### Step 4: Implement the Feature
+
+We will give the AI a single, high-level command to execute the plan it created.
+
+**Action:** Enter the following prompt:
+
+> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature.
+
+**(Wait for the AI to generate the code changes.)**
+
+**Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). This step transforms hours or days of coding into a few minutes of AI-driven execution.
+
+### Step 5: Test and Identify Issues
+
+After the AI has implemented the feature, a human developer's role shifts to testing and validation. Let's test the "Add Goal" button and see what happens. You'll notice it doesn't work. This is a realistic scenario where the initial implementation may have a bug or an omission.
+
+**Action:** Click the "New Goal" button in the "My Financial Goal" widget. You will see that it does nothing. Now, enter the following prompt:
+
+> The "New Goal" button in the Goal Planner Widget doesn't do anything when I click it. Please fix this by connecting it to the Add Goal Wizard.
+
+**(Wait for the AI to identify the issue and propose a fix.)**
+
+**Takeaway:** This is a critical part of the modern developer workflow. The developer's role evolves from pure code authoring to that of a senior reviewer and quality assurance lead. The AI does the heavy lifting of writing the code, and the developer uses their expertise to test, identify issues, and guide the AI to a correct and complete solution. This interactive debugging loop is far faster than traditional code-write-debug cycles.
+
+---
+
+## Workshop Conclusion (1 minute)
+
+In 30 minutes, we have:
+1.  **Defined** a new feature with a complete PRD.
+2.  **Planned** the technical implementation.
+3.  **Executed** the plan to build a full-stack feature.
+4.  **Identified and fixed** a bug in the implementation.
+
+This workflow, which blends human expertise with AI-driven execution, represents a fundamental shift in software development. It allows teams to move with unprecedented speed, test more ideas, and focus their creative energy on product vision and quality rather than routine coding tasks.
