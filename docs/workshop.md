@@ -69,7 +69,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 **Action:** Enter the following prompt:
 
-> Based on the PRD at `docs/debt-calculator.md`, create a technical implementation plan in a new file named `docs/debt-calculator-plan.md`. Break down the work into 3-4 discrete steps for a Next.js app using Genkit for the AI component.
+> Based on the PRD at `docs/debt-calculator.md`, create a technical implementation plan in a new file named `docs/debt-calculator-plan.md`. Break down the work into discrete steps for a Next.js app using Genkit for the AI component.
 
 **(Wait for the AI to generate the new plan file.)**
 
@@ -81,15 +81,17 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 With a solid plan in place, we now shift to a test-driven mindset. Before writing a single line of implementation code, we'll have the AI create a suite of failing unit tests. This ensures we have a clear, machine-verifiable definition of "done."
 
-### Step 5: Generate Failing Unit Tests
+### Step 5: Generate and Review Failing Unit Tests
 
-**Action:** Enter the following prompt:
+**Action:** First, enter the following prompt into the chat:
 
 > Based on the PRD, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
 **(Wait for the AI to generate the new test file.)**
 
-**Takeaway:** This is the core of a test-driven mindset. We now have a concrete, executable contract that defines what our feature must do. The developer's role is to review these tests, ensure they accurately reflect the PRD, and perhaps even add more edge cases. This creates an objective benchmark for success. When all tests pass, the core feature is complete.
+Now, take a moment to **review the generated tests**. Do they accurately reflect the PRD? Are there any edge cases the AI missed? As a developer, your role is to ensure the tests are comprehensive before any implementation begins.
+
+**Takeaway:** This is the core of a test-driven mindset. We now have a concrete, executable contract that defines what our feature must do. By reviewing and refining the tests upfront, we create an objective benchmark for success. When all tests pass, the core feature is complete.
 
 ---
 
