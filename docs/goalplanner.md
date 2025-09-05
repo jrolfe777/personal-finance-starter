@@ -1,8 +1,8 @@
-# Product Requirements Document: AI-Powered Goal Planner
+# Product Requirements Document: Goal Planner
 
 ## 1. Introduction
 
-This document outlines the requirements for the "Goal Planner," a new feature within the Protofolio application. The Goal Planner will empower users to define, strategize, and track their financial goals with the assistance of an AI co-pilot. This feature aims to move beyond simple financial tracking and provide users with actionable, personalized plans to achieve significant life milestones, such as buying a home, saving for a major purchase, or eliminating debt.
+This document outlines the requirements for the "Goal Planner," a new feature within the Protofolio application. The Goal Planner will empower users to define, strategize, and track their financial goals. This feature aims to move beyond simple financial tracking and provide users with actionable, personalized plans to achieve significant life milestones, such as buying a home, saving for a major purchase, or eliminating debt.
 
 ## 2. Problem Statement
 
@@ -10,16 +10,16 @@ Users often struggle to translate their financial goals into concrete, achievabl
 
 The Goal Planner will solve this by:
 -   **Providing Clarity:** Helping users define specific, measurable goals.
--   **Offering Strategy:** Using AI to analyze their financial situation and generate a personalized action plan.
+-   **Offering Strategy:** Analyzing their financial situation and generating a personalized action plan.
 -   **Maintaining Motivation:** Visualizing progress through an interactive dashboard widget and offering encouragement.
 
 ## 3. User Stories
 
 -   **As a user, I want to set up a new financial goal** so that I can start planning for a significant life event (e.g., getting approved for a mortgage, saving for a vacation, or paying off my credit card debt).
 -   **As a user, I want the app to help me define the parameters of my goal** (e.g., target amount, desired completion date) because I may not know exactly what is realistic.
--   **As a user, I want an AI assistant to analyze my finances and suggest a personalized strategy** to reach my goal, including how much I should save monthly and where I can cut back on spending.
+-   **As a user, I want the app to analyze my finances and suggest a personalized strategy** to reach my goal, including how much I should save monthly and where I can cut back on spending.
 -   **As a user, I want to see my goal progress visually on my main dashboard** so that I can stay motivated and track how close I am to achieving it.
--   **As a user, I want to receive tips and encouragement from the AI** as I work towards my goal, helping me stay on track.
+-   **As a user, I want to receive tips and encouragement** as I work towards my goal, helping me stay on track.
 
 ## 4. Feature Requirements
 
@@ -34,13 +34,13 @@ A new "Add Goal" wizard will guide the user through the setup process.
 -   **Parameter Definition:** Based on the goal type, the user will input specific details:
     -   **Savings Goals:** Target Amount, Target Date.
     -   **Debt Reduction:** Debt Account, Target Payoff Date.
--   **AI-Assisted Planning:**
-    -   After the user provides initial parameters, the AI will analyze their current financial profile (income, recurring expenses, transaction history).
-    -   The AI will generate a recommended plan, which includes:
+-   **Assisted Planning:**
+    -   After the user provides initial parameters, the app will analyze their current financial profile (income, recurring expenses, transaction history).
+    -   The app will generate a recommended plan, which includes:
         -   A projected timeline.
         -   A suggested monthly contribution/payment amount.
         -   Insights on spending categories where the user could save money.
-    -   The user can review and accept the AI's plan or make adjustments.
+    -   The user can review and accept the plan or make adjustments.
 
 ### 4.2. Dashboard Widget
 
@@ -52,23 +52,15 @@ Once a goal is created, a new widget will appear on the user's main dashboard.
     -   Key Metric Display:
         -   For Savings: `Current Amount Saved / Target Amount`.
         -   For Debt: `Remaining Balance / Initial Balance`.
-    -   A "Tip from your AI Co-Pilot" section with a brief, actionable insight (e.g., "You're spending 20% more on dining out this month. Cutting back could add $150 to your goal!").
+    -   A "Tip" section with a brief, actionable insight (e.g., "You're spending 20% more on dining out this month. Cutting back could add $150 to your goal!").
 -   **Interactivity:**
     -   Clicking the widget will open a detailed view of the goal plan and progress over time.
 
-### 4.3. AI & Technical Requirements
+### 4.3. Technical Requirements
 
--   **New Genkit Flow (`goal-planner-flow.ts`):**
-    -   **Input:** User's financial profile (income, expenses, assets, debts), selected goal type, and goal parameters (target amount/date).
-    -   **Logic:**
-        1.  Analyze the user's financial data to determine discretionary income.
-        2.  Calculate the required monthly contribution to meet the goal by the target date.
-        3.  If the required contribution is unrealistic based on discretionary income, suggest a more achievable timeline or contribution amount.
-        4.  Identify the top 2-3 spending categories where the user can potentially save.
-    -   **Output:** A structured JSON object containing the `plan` (monthly contribution, timeline) and `insights` (e.g., categories for potential savings).
 -   **New Component (`components/dashboard/goal-planner-widget.tsx`):**
     -   A client-side component that displays the goal progress.
-    -   It will fetch the goal status and AI-generated tips.
+    -   It will fetch the goal status and tips.
     -   It should present the information clearly and concisely, using UI elements like `Progress` and `Card`.
 
 ## 5. Success Metrics
