@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Transaction, Account } from '@/types';
 import { Badge } from '@/components/ui/badge';
+import ClientSideDate from '../client-side-date';
 
 interface TransactionHistoryProps {
   transactions: Transaction[];
@@ -108,7 +109,7 @@ export default function TransactionHistory({ transactions, accounts }: Transacti
                 <TableRow key={t.id}>
                     <TableCell>
                     <div className="font-medium">{t.description}</div>
-                    <div className="text-sm text-muted-foreground">{new Date(t.date).toLocaleDateString()}</div>
+                    <div className="text-sm text-muted-foreground"><ClientSideDate dateString={t.date} /></div>
                     </TableCell>
                     <TableCell className="hidden md:table-cell">
                         <Badge variant="outline" className={getCategoryColor(t.category)}>{t.category}</Badge>
