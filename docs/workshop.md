@@ -7,11 +7,11 @@
 
 ---
 
-## Introduction (2 minutes)
+## Introduction
 
 Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
- We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead / architect, and a pair programmer.
+ We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
@@ -19,9 +19,9 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ---
 
-## Initial Setup
+## Personal Finance Starter App: Initial Setup (5 minutes)
 
-Before we begin, let's get your environment ready.  This will load a simple Personal Finance app (the result of the first few steps of August's ILC hands on exercise [described here](https://drive.google.com/file/d/1SI-kveSMp1nmxtTc0A3_2RZY0KFa9is0/view).)
+Before we begin, let's get your environment ready.  This will load a simple Personal Finance app into Firebase (the result of the first few steps of August's ILC hands on exercise [described here](https://drive.google.com/file/d/1SI-kveSMp1nmxtTc0A3_2RZY0KFa9is0/view).)
 
 1.  Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
 2.  Choose the **"Import Repo"** option.
@@ -29,11 +29,11 @@ Before we begin, let's get your environment ready.  This will load a simple Pers
 4.  Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.
 5.  In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
 6.  In the terminal that appears at the bottom, type the command `npm install` and press Enter.
-7.  Wait for the installation to complete. You'll know you're ready to proceed when you see the "Karma Canvas" application loaded in the web preview pane on the right.
-
+7.  Wait for the installation to complete - it will take 3-4 minutes. Once the terminal command prompt is back, click "Try Again" in the web preview pane on the right, and the app will start and display after about 1 minute. 
+8.  Click the "Open in New Window" button in the web preview's toolbar and orient yourself with the layout of the starter app.
 ---
 
-## Part 1: The AI as a Product Manager (8 minutes)
+## Part 1: The AI as a Product Manager (6 minutes)
 
 In this section, we will task the AI with thinking through the product requirements for our new feature, just as a Product Manager would.
 
@@ -63,7 +63,7 @@ Now, let's review the PRD. Your role is to use your domain expertise - and under
 
 ---
 
-## Part 2: The AI as a Tech Lead (5 minutes)
+## Part 2: The AI as a Tech Lead (2 minutes)
 
 Now, let's switch hats from product to engineering. A good tech lead translates product requirements into a concrete technical plan. We'll ask the AI to do just that.
 
