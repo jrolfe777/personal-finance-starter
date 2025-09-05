@@ -34,26 +34,7 @@ export default function BalanceOverview({ accounts }: BalanceOverviewProps) {
 
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2 lg:gap-8">
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Total Cash</CardTitle>
-          <Landmark className="h-4 w-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold">{formatCurrency(totalCash)}</div>
-          <p className="text-xs text-muted-foreground">Across checking and savings</p>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Total Debt</CardTitle>
-          <PiggyBank className="h-4 w-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold">{formatCurrency(Math.abs(totalDebt))}</div>
-          <p className="text-xs text-muted-foreground">Across all credit accounts</p>
-        </CardContent>
-      </Card>
+      
     </div>
   );
 }
