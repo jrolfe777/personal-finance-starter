@@ -1,17 +1,10 @@
-# AI-Accelerated Prototyping: A 30-Minute Workshop
-
-**Audience:** Technology & Engineering Executives (Directors, VPs)
-**Goal:** Understand a mature method of leveraging a large language model (LLM) as an AI partner to accelerate application prototyping, from concept to code.
-**Theme:** Personal Finance
-**Platform:** Firebase Studio
-
----
+# Vibe like an Engineer: A 30-Minute Workshop
 
 ## Introduction
 
 Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
- We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+ We'll walk through an example workflow in Firebase Studio where an AI assistant - powered by Gemini - acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
@@ -45,21 +38,21 @@ First, let's have the AI create a first draft of a PRD for a "Debt Payoff Calcul
 
 > Create a Product Requirements Document in a new file, `docs/debt-calculator.md`. The feature is a "Debt Payoff Calculator" that lets a user select a debt, input their desired monthly payment, and see a projection of their payoff timeline. The PRD should include user stories and feature requirements.
 
-**(Wait for the AI to generate the file.)**
+**(Wait for the AI to generate the file, and be sure to save the file once its done.)**
 
-**Takeaway:** The AI has instantly created a structured requirements document. This process, which can often take hours or days of meetings and writing, is completed in seconds. It provides a solid foundation for the feature and a "single source of truth" for the team, ensuring alignment from the very beginning.
+**Takeaway:** The AI has instantly created a structured requirements document. This process, which can often take hours or days or weeks of meetings and writing, is completed in seconds. It provides a solid foundation for the feature and a "single source of truth" for the team, ensuring alignment from the very beginning.
 
 ### Step 2: Review and Refine the PRD
 
-Now, let's review the PRD. Your role is to use your domain expertise - and understanding of the business - to spot gaps and opportunities. To take the PRD from good to great. Review the PRD and add your own spin to it - remove weak ideas, add improvements, tweak and refine.
+Now, let's review the PRD. Your role is to use your domain expertise - and understanding of the business - to spot gaps and opportunities. To take the PRD from basic to great. Review the PRD and add your own spin to it - remove weak ideas, add improvements, tweak and refine.
 
 **Action:** Here's an example prompt, but you should replace with your own ideas, add success criteria, etc - iteratively, until you are happy with the feature you'll build:
 
-> This is a good start, but I want to make the calculator more helpful. Update `docs/debt-calculator.md` to add a feature requirement for an "AI-Powered Insight". This insight should analyze the user's proposed payment plan and provide feedback. For example, it could tell them if their payment is too low and will accrue more interest, or congratulate them if it's an aggressive, effective plan.
+> This is a good start, but I want to make the calculator more visual. Update `docs/debt-calculator.md` to add a feature requirement for a "Payoff Projection Chart". This chart should visually represent the debt balance decreasing over time based on the user's proposed monthly payment. It will make the payoff journey more tangible for the user.
 
 **(Wait for the AI to update the file.)**
 
-**Takeaway:** This demonstrates the iterative and collaborative nature of the AI partnership. The human developer provides the strategic direction and product sense, and the AI handles the documentation and refinement. We've just made the feature significantly more valuable without writing a single line of code, and we've created a durable asset that will form the basis of our context engineering during initial development and through the lifetime of maintenance for this feature.
+**Takeaway:** This demonstrates the iterative and collaborative nature of the AI partnership. Critically, this approach results in a durable specification, saved adjacent to our code.  This asset will be the foundation of our context engineering for this feature, both during initial development and throughout the feature's lifetime.
 
 ---
 
@@ -73,7 +66,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 > Based on the PRD at `docs/debt-calculator.md`, create a technical implementation plan in a new file named `docs/debt-calculator-plan.md`. Break down the work into discrete steps for a Next.js app using Genkit for the AI component.
 
-**(Wait for the AI to generate the new plan file.)**
+**(Wait for the AI to generate the new plan file, and be sure to save the file.)**
 
 **Takeaway:** The AI has successfully bridged the gap between the "what" (the PRD) and the "how" (the technical plan). It has analyzed the requirements and proposed a logical sequence of engineering tasks, including creating new UI components and AI flows. This provides immediate clarity for the development team and creates a ready-to-use backlog of work.
 
@@ -87,7 +80,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 **Action:** First, enter the following prompt into the chat:
 
-> Based on the PRD, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
+> Based on the PRD, and using the vitest framework, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
 **(Wait for the AI to generate the new test file.)**
 
@@ -117,7 +110,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer and quality assurance lead. We use our test plan from Step 5 to validate the implementation.
 
-**Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. As you refine, follow the same basic process. (1) Update the PRD if you are changing the way the feature works, (2) Update the tests if they are incomplete or did not catch the issue you identified, and (3) Update the implementation so that the tests succeed.
+**Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. As you refine, follow the same basic process. (1) Update the PRD and/or the technical plan if you are changing the way the feature works, (2) Update the tests if they are incomplete or did not catch the issue you identified, and (3) Update the implementation so that the tests succeed.
 
 **Takeaway:** This is a critical part of the modern developer workflow. The developer's role evolves from pure code authoring to that of a senior reviewer and quality assurance lead. The AI does the heavy lifting of writing the code, and the developer uses their expertise to test, identify issues, and guide the AI to a correct and complete solution. This interactive debugging loop is far faster than traditional code-write-debug cycles, and it is a durable investment in the long term quality of the code.
 
