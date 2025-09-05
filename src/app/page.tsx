@@ -20,10 +20,6 @@ export default function Home() {
             </div>
         </div>
 
-        <BalanceOverview
-          accounts={accounts as Account[]}
-        />
-
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             <div className="space-y-4 lg:col-span-1 lg:space-y-8">
                 <CreditReport />
@@ -36,6 +32,11 @@ export default function Home() {
                 />
             </div>
         </div>
+
+        <BalanceOverview
+          accounts={accounts as Account[]}
+        />
+
       </main>
     </div>
   );
