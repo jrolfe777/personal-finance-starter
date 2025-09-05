@@ -23,7 +23,7 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 Before we begin, let's get your environment ready.
 
-1.  Navigate to **studio.firebase.google.com**.
+1.  Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
 2.  Choose the **"Import Repo"** option.
 3.  Import the starter project from the following URL: `https://github.com/jrolfe777/personal-finance-starter`
 4.  Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.

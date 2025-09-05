@@ -1,4 +1,4 @@
-# **App Name**: Karma C
+# **App Name**: Karma Canvas
 
 ## Core Features:
 
