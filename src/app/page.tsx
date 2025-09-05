@@ -31,8 +31,8 @@ export default function Home() {
                 accounts={accounts as Account[]} 
             />
             <div className="flex flex-col gap-4 lg:gap-8">
-              <CreditReport />
               <GoalPlannerWidget />
+              <CreditReport />
             </div>
         </div>
       </main>
