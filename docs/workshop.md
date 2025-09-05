@@ -64,7 +64,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 **Action:** Enter the following prompt:
 
-> Based on the PRD at `docs/debt-calculator.md`, create a technical implementation plan in a new file named `docs/debt-calculator-plan.md`. Break down the work into discrete steps for a Next.js app using Genkit for the AI component.
+> Based on the PRD at docs/debt-calculator.md, create a technical implementation plan in a new file named docs/debt-calculator-plan.md. Break down the work into discrete steps for our existing Next.js app.
 
 **(Wait for the AI to generate the new plan file, and be sure to save the file.)**
 
@@ -80,7 +80,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 **Action:** First, enter the following prompt into the chat:
 
-> Based on the PRD, and using the vitest framework, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
+> Based on the PRD, and using the vitest framework, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
 **(Wait for the AI to generate the new test file, and be sure to save it.)**
 
