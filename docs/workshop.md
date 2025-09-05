@@ -9,13 +9,27 @@
 
 ## Introduction (2 minutes)
 
-Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. This approach often leads to unstructured code, making it difficult to maintain, scale, and onboard new engineers. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
+Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
- We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+ We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead / architect, and a pair programmer.
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
 **Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to turn "vibes" into (1) tight and carefully thought out specifications that form the base context for all future development and (2) comprehensive test suites that can be used to validate conformance to these specifications.
+
+---
+
+## Initial Setup
+
+Before we begin, let's get your environment ready.
+
+1.  Navigate to **studio.firebase.google.com**.
+2.  Choose the **"Import Repo"** option.
+3.  Import the starter project from the following URL: `https://github.com/jrolfe777/personal-finance-starter`
+4.  Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.
+5.  In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
+6.  In the terminal that appears at the bottom, type the command `npm install` and press Enter.
+7.  Wait for the installation to complete. You'll know you're ready to proceed when you see the "Karma Canvas" application loaded in the web preview pane on the right.
 
 ---
 
@@ -39,7 +53,7 @@ First, let's have the AI create a first draft of a PRD for a "Debt Payoff Calcul
 
 Now, let's review the PRD. Your role is to use your domain expertise - and understanding of the business - to spot gaps and opportunities. To take the PRD from good to great. Review the PRD and add your own spin to it - remove weak ideas, add improvements, tweak and refine.
 
-**Action:** Here's an example prompt, but you should replace with your own ideas, add success criteria, etc - iteratively, until you are happy with the PRD:
+**Action:** Here's an example prompt, but you should replace with your own ideas, add success criteria, etc - iteratively, until you are happy with the feature you'll build:
 
 > This is a good start, but I want to make the calculator more helpful. Update `docs/debt-calculator.md` to add a feature requirement for an "AI-Powered Insight". This insight should analyze the user's proposed payment plan and provide feedback. For example, it could tell them if their payment is too low and will accrue more interest, or congratulate them if it's an aggressive, effective plan.
 

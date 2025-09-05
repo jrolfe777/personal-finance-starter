@@ -1,4 +1,4 @@
-# **App Name**: Protofolio
+# **App Name**: Karma C
 
 ## Core Features:
 
