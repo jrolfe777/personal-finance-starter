@@ -16,6 +16,8 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
+*Note: If you were given a preloaded firebase project link, you can skip this step and go straight to Part 1*
+
 Before we begin, let's get your environment ready.  This will load a simple Personal Finance app into Firebase (the result of the first few steps of August's ILC hands on exercise [described here](https://drive.google.com/file/d/1SI-kveSMp1nmxtTc0A3_2RZY0KFa9is0/view).)
 
 1.  Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
