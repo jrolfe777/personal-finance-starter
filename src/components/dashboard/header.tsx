@@ -1,4 +1,4 @@
-import { Landmark, User } from 'lucide-react';
+import { Repeat, User } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   DropdownMenu,
@@ -22,8 +22,8 @@ export default function Header({ userName }: HeaderProps) {
           href="#"
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
-          <Landmark className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl">Karma Canvas</span>
+          <Repeat className="h-6 w-6 text-primary" />
+          <span className="font-headline text-xl whitespace-nowrap">Karma Canvas</span>
         </a>
       </nav>
       <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
