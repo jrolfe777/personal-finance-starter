@@ -9,7 +9,7 @@
 
 ## Introduction (2 minutes)
 
-Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration?  This workshop demonstrates some of the techniquees we've been finding effective.  Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
+Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
  We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
@@ -113,6 +113,6 @@ In 30 minutes, we have:
 1.  **Defined** a new feature with a complete PRD.
 2.  **Planned** the technical implementation.
 3.  **Executed** the plan to build a full-stack feature.
-4.  **Identified and fixed** a bug in the implementation.
+4.  **Validated** the implementation and guided the AI to fix a bug.
 
 This workflow, which blends human expertise with AI-driven execution, represents a fundamental shift in software development. It allows teams to move with unprecedented speed, test more ideas, and focus their creative energy on product vision and quality rather than routine coding tasks.
