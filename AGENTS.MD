@@ -14,7 +14,7 @@ The development process follows a structured, test-driven approach. Do not devia
 ## Guiding Principles
 
 -   **Test-Driven Development (TDD):** TDD is not optional; it is a core part of the workflow. Always create failing tests *before* writing the implementation code. This ensures clarity on the requirements and provides a clear definition of "done."
--   **Follow the User's Lead:** Do not skip ahead. Do not start implementation before creating and getting approval on the PRD, technical plan, and unit tests. Each step is a checkpoint for collaboration with the human developer.
+-   **Follow the User's Lead:** Do not skip ahead. Do not start implementation before creating and getting approval on the PRD, technical plan, and suite of unit tests (its OK to write the complete suite and then review it with the user). Each step is a checkpoint for collaboration with the human developer.
 
 ## Tech Stack
 
