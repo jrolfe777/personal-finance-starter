@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import type { CreditAccount } from '@/types';
+import ClientSideDate from '@/components/client-side-date';
 
 interface CreditUtilizationProps {
   creditAccounts: CreditAccount[];
@@ -49,7 +50,7 @@ export default function CreditUtilization({ creditAccounts }: CreditUtilizationP
                   Utilization: {utilization.toFixed(1)}%
                 </Badge>
                 <div className='text-right'>
-                    <div>Due: {new Date(card.dueDate || '').toLocaleDateString()}</div>
+                    <div>Due: {card.dueDate ? <ClientSideDate dateString={card.dueDate} /> : 'N/A'}</div>
                     <div className={getStatusColor(card.payment_status)}>
                         Min. {formatCurrency(card.minPayment || 0)}
                     </div>
