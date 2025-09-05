@@ -79,17 +79,17 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 ## Part 3: The AI as a Test Engineer (5 minutes)
 
-With a solid plan in place, we now shift to a test-driven mindset. Before writing a single line of implementation code, we'll have the AI create a test plan. This ensures we have a clear definition of "done" and a way to validate our feature against the requirements.
+With a solid plan in place, we now shift to a test-driven mindset. Before writing a single line of implementation code, we'll have the AI create a suite of failing unit tests. This ensures we have a clear, machine-verifiable definition of "done."
 
-### Step 5: Generate the Test Plan
+### Step 5: Generate Failing Unit Tests
 
 **Action:** Enter the following prompt:
 
-> Based on the PRD, create a test plan for the Debt Payoff Calculator in a new file named `docs/debt-calculator-tests.md`. The plan should cover the main user stories and acceptance criteria.
+> Based on the PRD, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
-**(Wait for the AI to generate the test plan.)**
+**(Wait for the AI to generate the new test file.)**
 
-**Takeaway:** This step is crucial. By generating tests upfront, we are creating a contract for our feature's behavior. This plan becomes our guide for validation. The developer's role is to review this plan, ensure it's comprehensive, and use it to verify the AI's implementation in the next step.
+**Takeaway:** This is the core of a test-driven mindset. We now have a concrete, executable contract that defines what our feature must do. The developer's role is to review these tests, ensure they accurately reflect the PRD, and perhaps even add more edge cases. This creates an objective benchmark for success. When all tests pass, the core feature is complete.
 
 ---
 
@@ -103,7 +103,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **Action:** Enter the following prompt:
 
-> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature.
+> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/ai/flows/tests/debt-calculator.test.ts` pass.
 
 **(Wait for the AI to generate the code changes.)**
 
