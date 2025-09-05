@@ -21,7 +21,7 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Initial Setup
 
-Before we begin, let's get your environment ready.
+Before we begin, let's get your environment ready.  This will load a simple Personal Finance app (the result of the first few steps of August's ILC hands on exercise [described here](https://drive.google.com/file/d/1SI-kveSMp1nmxtTc0A3_2RZY0KFa9is0/view).)
 
 1.  Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
 2.  Choose the **"Import Repo"** option.
