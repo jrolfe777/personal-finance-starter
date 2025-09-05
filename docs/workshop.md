@@ -9,11 +9,11 @@
 
 ## Introduction (2 minutes)
 
-Vibe coding — starting with a vague idea and then generating code until it feels right - can be a ton of fun and has a wow factor when you first start. While enjoyable, this approach often doesn't scale and falls short of a professional engineering process.
+Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration?  This workshop demonstrates some of the techniquees we've been finding effective.  Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
-This workshop demonstrates how to bridge that gap. We'll showcase a workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming a developer's intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+ We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
-We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create an implementation plan, and write production-ready code.
+We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
 **Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to turn "vibes" into (1) tight and carefully thought out specifications that form the base context for all future development and (2) comprehensive test suites that can be used to validate conformance to these specifications.
 
