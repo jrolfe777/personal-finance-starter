@@ -77,11 +77,27 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 ---
 
-## Part 3: The AI as a Pair Programmer (15 minutes)
+## Part 3: The AI as a Test Engineer (5 minutes)
 
-This is where the plan turns into product. We will now instruct the AI to execute the implementation plan it just created.
+With a solid plan in place, we now shift to a test-driven mindset. Before writing a single line of implementation code, we'll have the AI create a test plan. This ensures we have a clear definition of "done" and a way to validate our feature against the requirements.
 
-### Step 5: Implement the Feature
+### Step 5: Generate the Test Plan
+
+**Action:** Enter the following prompt:
+
+> Based on the PRD, create a test plan for the Debt Payoff Calculator in a new file named `docs/debt-calculator-tests.md`. The plan should cover the main user stories and acceptance criteria.
+
+**(Wait for the AI to generate the test plan.)**
+
+**Takeaway:** This step is crucial. By generating tests upfront, we are creating a contract for our feature's behavior. This plan becomes our guide for validation. The developer's role is to review this plan, ensure it's comprehensive, and use it to verify the AI's implementation in the next step.
+
+---
+
+## Part 4: The AI as a Pair Programmer (8 minutes)
+
+This is where the plan turns into product. We will now instruct the AI to execute the implementation plan it created.
+
+### Step 6: Implement the Feature
 
 We will give the AI a single, high-level command to execute the plan it created.
 
@@ -93,11 +109,11 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). This step transforms hours or days of coding into a few minutes of AI-driven execution.
 
-### Step 6: Test and Identify Issues
+### Step 7: Validate and Identify Issues
 
-After the AI has implemented the feature, a human developer's role shifts to testing and validation. Let's test the "Add Goal" button and see what happens. You'll notice it doesn't work. This is a realistic scenario where the initial implementation may have a bug or an omission.
+After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer and quality assurance lead. We use our test plan from Step 5 to validate the implementation.
 
-**Action:** Click the "New Goal" button in the "My Financial Goal" widget. You will see that it does nothing. Now, enter the following prompt:
+**Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. For example, you might notice the "New Goal" button in the Goal Planner Widget doesn't do anything. Now, enter the following prompt:
 
 > The "New Goal" button in the Goal Planner Widget doesn't do anything when I click it. Please fix this by connecting it to the Add Goal Wizard.
 
@@ -107,12 +123,13 @@ After the AI has implemented the feature, a human developer's role shifts to tes
 
 ---
 
-## Workshop Conclusion (1 minute)
+## Workshop Conclusion (2 minute)
 
 In 30 minutes, we have:
 1.  **Defined** a new feature with a complete PRD.
 2.  **Planned** the technical implementation.
-3.  **Executed** the plan to build a full-stack feature.
-4.  **Validated** the implementation and guided the AI to fix a bug.
+3.  **Authored** a test plan to guide validation.
+4.  **Executed** the plan to build a full-stack feature.
+5.  **Validated** the implementation and guided the AI to fix a bug.
 
 This workflow, which blends human expertise with AI-driven execution, represents a fundamental shift in software development. It allows teams to move with unprecedented speed, test more ideas, and focus their creative energy on product vision and quality rather than routine coding tasks.
