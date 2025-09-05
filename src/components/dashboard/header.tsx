@@ -23,7 +23,7 @@ export default function Header({ userName }: HeaderProps) {
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
           <Landmark className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl">Protofolio</span>
+          <span className="font-headline text-xl">Karma Canvas</span>
         </a>
       </nav>
       <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
