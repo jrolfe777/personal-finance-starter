@@ -53,7 +53,7 @@ export default function CreditReport() {
       </CardHeader>
       <CardContent className="text-center">
         <div className="text-6xl font-bold text-primary">{MOCK_DATA.creditScore}</div>
-        <div className="text-lg font-medium text-muted-foreground">Excellent</div>
+        <div className="text-lg font-medium text-muted-foreground">Fair</div>
         <p className="text-xs text-muted-foreground mt-1">Last updated today</p>
         <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>
           <DialogTrigger asChild>
