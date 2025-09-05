@@ -6,6 +6,7 @@ import TransactionHistory from '@/components/dashboard/transaction-history';
 import FinancialSummary from '@/components/dashboard/financial-summary';
 import CreditReport from '@/components/dashboard/credit-report';
 import CreditUtilization from '@/components/dashboard/credit-utilization';
+import AccountBalances from '@/components/dashboard/account-balances';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Landmark, PiggyBank } from 'lucide-react';
 
@@ -66,6 +67,8 @@ export default function Home() {
             <CreditUtilization creditAccounts={creditAccounts as CreditAccount[]} />
         </div>
         
+        <AccountBalances accounts={accounts as Account[]} />
+
         <TransactionHistory 
             transactions={transactions as Transaction[]}
             accounts={accounts as Account[]} 
