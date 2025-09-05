@@ -1,19 +1,21 @@
-# **App Name**: Karma Canvas
+# Blueprint
 
-## Core Features:
+This document outlines the core architecture and technical choices for the Karma Canvas application.
 
-- Mock Data API: Provide an API endpoint to generate mock user financial data including credit score, accounts, assets, and transactions.
-- Credit Report: Assemble the credit history into an easy to read and interpretable report.
-- Dashboard UI: A basic dashboard layout to host financial experience prototypes.
-- Transaction History Viewer: Display transactions with the ability to filter and search.
-- Balance Overview: Display a summary of account and asset balances.
+## Tech Stack
 
-## Style Guidelines:
+This project is built on a modern, robust, and scalable technology stack designed for rapid development and high performance.
 
-- Primary color: Medium blue (#5DADE2) for trustworthiness and clarity.
-- Background color: Very light blue (#F0F8FF) to provide a calm backdrop.
-- Accent color: Deep sky blue (#3399FF) to highlight important actions and information.
-- Body and headline font: 'Inter', a grotesque sans-serif for a modern and objective look.
-- Use clean, simple line icons to represent different financial elements.
-- Design a clean and intuitive layout with clear sections for each data category.
-- Use subtle transitions and animations for user interactions, such as loading data or updating balances.
+- **Framework**: [Next.js](https://nextjs.org/) - A React framework for building full-stack web applications. It provides a powerful blend of server-side rendering (SSR) and client-side rendering, along with features like the App Router for improved file-based routing.
+
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - A statically typed superset of JavaScript that enhances code quality, maintainability, and developer productivity by catching errors early.
+
+- **UI Components**: [ShadCN UI](https://ui.shadcn.com/) - A collection of beautifully designed and accessible UI components that can be easily customized and integrated.
+
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom user interfaces without leaving your HTML.
+
+- **AI/Generative AI**: [Genkit](https://firebase.google.com/docs/genkit) - A framework from Firebase for building production-ready, AI-powered features.
+
+- **Unit Testing**: [Vitest](https://vitest.dev/) - A blazing-fast unit test framework with a focus on developer experience.
+
+- **Icons**: [Lucide React](https://lucide.dev/) - A simple and beautiful icon library.
