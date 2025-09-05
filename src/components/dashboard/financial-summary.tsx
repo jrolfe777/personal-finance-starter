@@ -15,7 +15,7 @@ export default function FinancialSummary() {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="text-center text-sm text-muted-foreground py-8">
-          <p>Workshop attendees will replace this component with their feature.</p>
+          <p>Ask the agent to replace this component with your feature once you are happy with your PRD and you're ready to implement it.</p>
         </div>
       </CardContent>
     </Card>
