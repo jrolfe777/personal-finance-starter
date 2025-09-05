@@ -3,11 +3,10 @@
 ## Core Features:
 
 - Mock Data API: Provide an API endpoint to generate mock user financial data including credit score, accounts, assets, and transactions.
-- Credit Report Generator: Use AI to assemble the credit history into an easy to read and interpretable report.
+- Credit Report: Assemble the credit history into an easy to read and interpretable report.
 - Dashboard UI: A basic dashboard layout to host financial experience prototypes.
 - Transaction History Viewer: Display transactions with the ability to filter and search.
 - Balance Overview: Display a summary of account and asset balances.
-- Financial Summary Tool: Provide an executive summary of overall financial health and position, by interpreting API mock data, using AI as a tool to provide additional explanations or details of data points.
 
 ## Style Guidelines:
 
