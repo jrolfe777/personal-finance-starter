@@ -37,27 +37,15 @@ First, let's have the AI create a first draft of a PRD for a "Debt Payoff Calcul
 
 ### Step 2: Review and Refine the PRD
 
-Now, let's review the PRD. A key part of the developer's role is to use their domain expertise to spot gaps and opportunities. The current PRD is good, but it's basic. It calculates a timeline, but it doesn't help the user understand *if their plan is good*. Let's ask the AI to think like a financial advisor and improve the feature.
+Now, let's review the PRD. Your role is to use your domain expertise - and understanding of the business - to spot gaps and opportunities. To take the PRD from good to great. Review the PRD and add your own spin to it - remove weak ideas, add improvements, tweak and refine.
 
-**Action:** Enter the following prompt:
+**Action:** Here's an example prompt, but you should replace with your own ideas, add success criteria, etc - iteratively, until you are happy with the PRD:
 
 > This is a good start, but I want to make the calculator more helpful. Update `docs/debt-calculator.md` to add a feature requirement for an "AI-Powered Insight". This insight should analyze the user's proposed payment plan and provide feedback. For example, it could tell them if their payment is too low and will accrue more interest, or congratulate them if it's an aggressive, effective plan.
 
 **(Wait for the AI to update the file.)**
 
-**Takeaway:** This demonstrates the iterative and collaborative nature of the AI partnership. The human developer provides the strategic direction and product sense, and the AI handles the documentation and refinement. We've just made the feature significantly more valuable without writing a single line of code.
-
-### Step 3: Refine the PRD with Success Metrics
-
-A good PM knows that a feature isn't complete without a way to measure its success. Let's ask the AI to add that to the PRD.
-
-**Action:** Enter the following prompt:
-
-> This is much better. Now, add a "Success Metrics" section to `docs/debt-calculator.md` to help us understand if the feature is successful.
-
-**(Wait for the AI to update the file.)**
-
-**Takeaway:** You can refine and enhance the product specification with simple, natural language commands. The AI understands the context and modifies the existing document, acting as a true partner in the product definition phase.
+**Takeaway:** This demonstrates the iterative and collaborative nature of the AI partnership. The human developer provides the strategic direction and product sense, and the AI handles the documentation and refinement. We've just made the feature significantly more valuable without writing a single line of code, and we've created a durable asset that will form the basis of our context engineering during initial development and through the lifetime of maintenance for this feature.
 
 ---
 
@@ -65,7 +53,7 @@ A good PM knows that a feature isn't complete without a way to measure its succe
 
 Now, let's switch hats from product to engineering. A good tech lead translates product requirements into a concrete technical plan. We'll ask the AI to do just that.
 
-### Step 4: Generate the Implementation Plan
+### Step 3: Generate the Implementation Plan
 
 **Action:** Enter the following prompt:
 
@@ -81,7 +69,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 With a solid plan in place, we now shift to a test-driven mindset. Before writing a single line of implementation code, we'll have the AI create a suite of failing unit tests. This ensures we have a clear, machine-verifiable definition of "done."
 
-### Step 5: Generate and Review Failing Unit Tests
+### Step 4: Generate and Review Failing Unit Tests
 
 **Action:** First, enter the following prompt into the chat:
 
@@ -99,7 +87,7 @@ Now, take a moment to **review the generated tests**. Do they accurately reflect
 
 This is where the plan turns into product. We will now instruct the AI to execute the implementation plan it created.
 
-### Step 6: Implement the Feature
+### Step 5: Implement the Feature
 
 We will give the AI a single, high-level command to execute the plan it created.
 
@@ -111,7 +99,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). This step transforms hours or days of coding into a few minutes of AI-driven execution.
 
-### Step 7: Validate and Identify Issues
+### Step 6: Validate and Identify Issues
 
 After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer and quality assurance lead. We use our test plan from Step 5 to validate the implementation.
 
@@ -121,7 +109,7 @@ After the AI has implemented the feature, the developer's role shifts to that of
 
 **(Wait for the AI to identify the issue and propose a fix.)**
 
-**Takeaway:** This is a critical part of the modern developer workflow. The developer's role evolves from pure code authoring to that of a senior reviewer and quality assurance lead. The AI does the heavy lifting of writing the code, and the developer uses their expertise to test, identify issues, and guide the AI to a correct and complete solution. This interactive debugging loop is far faster than traditional code-write-debug cycles.
+**Takeaway:** This is a critical part of the modern developer workflow. The developer's role evolves from pure code authoring to that of a senior reviewer and quality assurance lead. The AI does the heavy lifting of writing the code, and the developer uses their expertise to test, identify issues, and guide the AI to a correct and complete solution. This interactive debugging loop is far faster than traditional code-write-debug cycles, and it is a durable investment in the long term quality of the code.
 
 ---
 
