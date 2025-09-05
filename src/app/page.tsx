@@ -21,12 +21,8 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-            <div className="space-y-4 lg:space-y-8">
-                <CreditReport />
-            </div>
-            <div className="space-y-4 lg:space-y-8">
-                <CreditUtilization creditAccounts={creditAccounts as CreditAccount[]} />
-            </div>
+            <CreditReport />
+            <CreditUtilization creditAccounts={creditAccounts as CreditAccount[]} />
         </div>
 
         <BalanceOverview
