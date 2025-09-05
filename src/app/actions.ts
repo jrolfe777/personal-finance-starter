@@ -2,9 +2,7 @@
 
 import { generateFinancialSummary } from '@/ai/flows/financial-summary-tool';
 import { generateCreditReport } from '@/ai/flows/credit-report-generator';
-import { generateGoalStrategy } from '@/ai/flows/goal-strategy-flow';
 import { MOCK_DATA } from '@/lib/mock-data';
-import type { GoalStrategyInput } from '@/ai/flows/goal-strategy-flow';
 
 export async function getFinancialSummaryAction() {
   try {
@@ -51,23 +49,4 @@ export async function getCreditReportAction() {
     console.error('Error generating credit report:', error);
     return { error: 'Failed to generate credit report.' };
   }
-}
-
-export async function getGoalStrategyAction(input: GoalStrategyInput) {
-    try {
-        const { accounts, transactions } = MOCK_DATA;
-        const result = await generateGoalStrategy({
-            ...input,
-            financials: {
-                // This would be dynamically sourced in a real app
-                monthlyIncome: 5000,
-                accounts,
-                recentTransactions: transactions.slice(0, 20)
-            }
-        });
-        return { strategy: result };
-    } catch (error) {
-        console.error('Error generating goal strategy:', error);
-        return { error: 'Failed to generate goal strategy.' };
-    }
 }

@@ -5,7 +5,6 @@ import BalanceOverview from '@/components/dashboard/balance-overview';
 import TransactionHistory from '@/components/dashboard/transaction-history';
 import FinancialSummary from '@/components/dashboard/financial-summary';
 import CreditReport from '@/components/dashboard/credit-report';
-import GoalPlannerWidget from '@/components/dashboard/goal-planner-widget';
 
 export default function Home() {
   const { accounts, assets, transactions, user } = MOCK_DATA;
@@ -30,10 +29,7 @@ export default function Home() {
                 transactions={transactions as Transaction[]}
                 accounts={accounts as Account[]} 
             />
-            <div className="flex flex-col gap-4 lg:gap-8">
-              <GoalPlannerWidget />
-              <CreditReport />
-            </div>
+            <CreditReport />
         </div>
       </main>
     </div>
