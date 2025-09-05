@@ -9,7 +9,7 @@
 
 ## Introduction (2 minutes)
 
-Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
+Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. However, velocity benefits and output quality quickly erode at scale. This approach often leads to unstructured code, making it difficult to maintain, scale, and onboard new engineers. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
  We'll walk through an example workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
@@ -103,13 +103,28 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer and quality assurance lead. We use our test plan from Step 5 to validate the implementation.
 
-**Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. For example, you might notice the "New Goal" button in the Goal Planner Widget doesn't do anything. Now, enter the following prompt:
-
-> The "New Goal" button in the Goal Planner Widget doesn't do anything when I click it. Please fix this by connecting it to the Add Goal Wizard.
-
-**(Wait for the AI to identify the issue and propose a fix.)**
+**Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. As you refine, follow the same basic process. (1) Update the PRD if you are changing the way the feature works, (2) Update the tests if they are incomplete or did not catch the issue you identified, and (3) Update the implementation so that the tests succeed.
 
 **Takeaway:** This is a critical part of the modern developer workflow. The developer's role evolves from pure code authoring to that of a senior reviewer and quality assurance lead. The AI does the heavy lifting of writing the code, and the developer uses their expertise to test, identify issues, and guide the AI to a correct and complete solution. This interactive debugging loop is far faster than traditional code-write-debug cycles, and it is a durable investment in the long term quality of the code.
+
+---
+
+## Optional Part 5: Your Turn (Time Permitting)
+
+Now that you've seen the end-to-end workflow, it's your turn. If time remains, think of a new and creative personal finance feature you'd like to build. It could be anything:
+- A "Subscription Tracker" to find and cancel unwanted recurring payments.
+- An "Upcoming Bills" widget to avoid late fees.
+- A "Savings Goal" visualizer.
+- A tool to categorize transactions automatically using AI.
+
+Once you have an idea, use the exact same process you just learned:
+1.  **Act as the Product Manager:** Have the AI create a PRD. Review and refine it.
+2.  **Act as the Tech Lead:** Ask for an implementation plan.
+3.  **Act as the Test Engineer:** Generate failing tests that define success.
+4.  **Act as the Pair Programmer:** Instruct the AI to implement the feature and make the tests pass.
+5.  **Validate:** Review the result and guide the AI to fix any issues.
+
+This is your chance to experience the full power of this collaborative workflow.
 
 ---
 
