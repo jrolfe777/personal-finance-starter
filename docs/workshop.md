@@ -82,7 +82,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 > Based on the PRD, and using the vitest framework, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" AI flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
-**(Wait for the AI to generate the new test file.)**
+**(Wait for the AI to generate the new test file, and be sure to save it.)**
 
 Now, take a moment to **review the generated tests**. Do they accurately reflect the PRD? Are there any edge cases the AI missed? As a developer, your role is to ensure the tests are comprehensive before any implementation begins.
 
