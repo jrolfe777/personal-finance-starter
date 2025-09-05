@@ -14,8 +14,6 @@ This project is built on a modern, robust, and scalable technology stack designe
 
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom user interfaces without leaving your HTML.
 
-- **AI/Generative AI**: [Genkit](https://firebase.google.com/docs/genkit) - A framework from Firebase for building production-ready, AI-powered features.
-
 - **Unit Testing**: [Vitest](https://vitest.dev/) - A blazing-fast unit test framework with a focus on developer experience.
 
 - **Icons**: [Lucide React](https://lucide.dev/) - A simple and beautiful icon library.
