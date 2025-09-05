@@ -9,13 +9,13 @@
 
 ## Introduction (2 minutes)
 
-Many developers today engage in what could be called "vibe coding"—starting with a vague idea, writing code until it feels right, and often ending up with a solution that's disconnected from user needs or business goals. While this can be fun, it's not a scalable or professional engineering practice.
+Vibe coding — starting with a vague idea and then generating code until it feels right - can be a ton of fun and has a wow factor when you first start. While enjoyable, this approach often doesn't scale and falls short of a professional engineering process.
 
-This workshop demonstrates how to bridge that gap. We'll showcase a powerful workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming a developer's intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+This workshop demonstrates how to bridge that gap. We'll showcase a workflow in Firebase Studio where an AI assistant acts as a collaborative partner, transforming a developer's intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create an implementation plan, and write production-ready code.
 
-**Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to streamline the entire development lifecycle, turning a developer's initial "vibe" into a well-defined, rapidly validated product, and significantly boosting professional productivity.
+**Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to turn "vibes" into (1) tight and carefully thought out specifications that form the base context for all future development and (2) comprehensive test suites that can be used to validate conformance to these specifications.
 
 ---
 
