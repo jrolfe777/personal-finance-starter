@@ -102,7 +102,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **Action:** Enter the following prompt:
 
-> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/ai/flows/tests/debt-calculator.test.ts` pass.
+> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/ai/flows/tests/debt-calculator.test.ts` pass. Replace the "Your Personal Finance Experience Goes Here" placeholder widget with the new component.
 
 **(Wait for the AI to generate the code changes.)**
 
