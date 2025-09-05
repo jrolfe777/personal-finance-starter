@@ -9,6 +9,7 @@ import CreditUtilization from '@/components/dashboard/credit-utilization';
 import AccountBalances from '@/components/dashboard/account-balances';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Landmark, PiggyBank } from 'lucide-react';
+import ClientSideCurrency from '@/components/client-side-currency';
 
 export default function Home() {
   const { accounts, assets, transactions, user, creditAccounts } = MOCK_DATA;
@@ -21,15 +22,6 @@ export default function Home() {
     .filter((acc) => acc.type === 'credit')
     .reduce((sum, acc) => sum + acc.balance, 0);
   
-  const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }).format(value);
-  };
-
   return (
     <div className="flex min-h-screen w-full flex-col">
       <Header userName={user.name} />
@@ -49,7 +41,7 @@ export default function Home() {
                     <Landmark className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                    <div className="text-2xl font-bold">{formatCurrency(totalCash)}</div>
+                    <div className="text-2xl font-bold"><ClientSideCurrency value={totalCash} /></div>
                     <p className="text-xs text-muted-foreground">Across checking and savings</p>
                     </CardContent>
                 </Card>
@@ -59,7 +51,7 @@ export default function Home() {
                     <PiggyBank className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                    <div className="text-2xl font-bold">{formatCurrency(Math.abs(totalDebt))}</div>
+                    <div className="text-2xl font-bold"><ClientSideCurrency value={Math.abs(totalDebt)} /></div>
                     <p className="text-xs text-muted-foreground">Across all credit accounts</p>
                     </CardContent>
                 </Card>
