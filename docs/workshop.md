@@ -14,6 +14,8 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 **Key Takeaway:** This is about evolving beyond simple code generation. It's about partnering with AI to turn "vibes" into (1) tight and carefully thought out specifications that form the base context for all future development and (2) comprehensive test suites that can be used to validate conformance to these specifications.
 
+> 💡 **Before You Start, or After You Finish:** Also take a look at [Working with Coding Assistants: Tips & Tricks](./working-with-coding-assistants-tips-tricks.md) for some quick pointers and best practices for getting the most out of coding assistants.
+
 **SPOLIER:** If you want a quick TLDR on what this workshop is demonstrating, review the AGENTS.md file.  
 
 ---
