@@ -20,7 +20,12 @@ The development process follows a structured, test-driven approach. Do not devia
 
 This project is built on a modern, robust, and scalable technology stack designed for rapid development and high performance.
 
-- **Framework**: [Next.js](https://nextjs.org/) - A React framework for building full-stack web applications. It provides a powerful blend of server-side rendering (SSR) and client-side rendering, along with features like the App Router for improved file-based routing.
+- **Framework**: [Next.js 14](https://nextjs.org/) - React framework using the App Router architecture
+  - **Routing**: File-based routing in `src/app/` directory
+  - **Components**: Primarily Server Components (default), use `'use client'` only when needed
+  - **Key Files**: `layout.tsx` (shared layouts), `page.tsx` (route pages), `loading.tsx`, `error.tsx`
+  - **Data Fetching**: Async Server Components for server-side data, React Query for client-side
+  - **APIs**: Route handlers in `route.ts` files following REST conventions
 
 - **Language**: [TypeScript](https://www.typescriptlang.org/) - A statically typed superset of JavaScript that enhances code quality, maintainability, and developer productivity by catching errors early.
 
