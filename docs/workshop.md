@@ -4,7 +4,11 @@
 
 Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. **However, velocity benefits and output quality quickly erode at scale**. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
- We'll walk through an example workflow in Firebase Studio where an AI assistant - powered by Gemini - acts as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+ We'll walk through an example workflow using an AI assistant as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
+
+This workshop offers two setup options:
+1. **Local IDE (Recommended)** - Using Cursor with Claude Sonnet 4 for superior model quality and stability
+2. **Firebase Studio** - Cloud-based option using Gemini for those who want to use a browser-based environment (and might not have a)
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
@@ -16,18 +20,48 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
+Choose your preferred development environment. The **Local IDE option is recommended** for superior model quality and stability.
+
+### Option A: Local IDE Setup (Recommended)
+
+**Prerequisites:** You'll need Node.js 20+ and Cursor installed. If you don't have these, see our [Local Setup Guide](./local-setup-guide.md) first.
+
+1. **Clone the repository** to your desired location:
+   ```bash
+   git clone https://github.com/jrolfe777/personal-finance-starter
+   cd personal-finance-starter
+   ```
+
+2. **Open the project** in Cursor by either:
+   - Opening Cursor and using File → Open Folder to select the cloned directory
+   - Or running `cursor .` from within the project directory
+
+3. **Install dependencies** by opening a terminal in Cursor and running:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. **View the application** by opening your browser to `http://localhost:9002`
+
+6. **Enable AI assistance** by opening Chat in Cursor and ensuring you're using Claude Sonnet 4 in Agent Mode for the best results.
+
+### Option B: Firebase Studio Setup
+
 *Note: If you were given a preloaded firebase project link, you can skip this step and go straight to Part 1*
 
-Before we begin, let's get your environment ready.  This will load a simple Personal Finance app into Firebase (the result of the first few steps of August's ILC hands on exercise [described here](https://drive.google.com/file/d/1SI-kveSMp1nmxtTc0A3_2RZY0KFa9is0/view).)
-
-1.  Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
-2.  Choose the **"Import Repo"** option.
-3.  Import the starter project from the following URL: `https://github.com/jrolfe777/personal-finance-starter`
-4.  Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.
-5.  In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
-6.  In the terminal that appears at the bottom, type the command `npm install` and press Enter.
-7.  Wait for the installation to complete - it will take 3-4 minutes. Once the terminal command prompt is back, click "Try Again" in the web preview pane on the right, and the app will start and display after about 1 minute. 
-8.  Click the "Open in New Window" button in the web preview's toolbar and orient yourself with the layout of the starter app.
+1. Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
+2. Choose the **"Import Repo"** option.
+3. Import the starter project from the following URL: `https://github.com/jrolfe777/personal-finance-starter`
+4. Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.
+5. In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
+6. In the terminal that appears at the bottom, type the command `npm install` and press Enter.
+7. Wait for the installation to complete - it will take 3-4 minutes. Once the terminal command prompt is back, click "Try Again" in the web preview pane on the right, and the app will start and display after about 1 minute. 
+8. Click the "Open in New Window" button in the web preview's toolbar and orient yourself with the layout of the starter app.
 ---
 
 ## Part 1: The AI as a Product Manager (6 minutes)
