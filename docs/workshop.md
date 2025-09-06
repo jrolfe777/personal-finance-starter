@@ -34,8 +34,8 @@ Choose your preferred development environment. The **Local IDE option has superi
    cd personal-finance-starter
    ```
 
-2. **Open the project** in Cursor by either:
-   - Opening Cursor and using File → Open Folder to select the cloned directory
+2. **Open the project**
+   - Open Cursor and use File → Open Folder to select the cloned directory
 
 3. **Install dependencies** by opening a terminal in Cursor and running:
    ```bash
