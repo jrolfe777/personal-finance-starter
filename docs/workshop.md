@@ -107,7 +107,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 **(Wait for the AI to generate the new plan file, and be sure to save the file.)**
 
-**Takeaway:** The AI has successfully bridged the gap between the "what" (the PRD) and the "how" (the technical plan). It has analyzed the requirements and proposed a logical sequence of engineering tasks, including creating new UI components and AI flows. This provides immediate clarity for the development team and creates a ready-to-use backlog of work.
+**Takeaway:** The AI has successfully bridged the gap between the "what" (the PRD) and the "how" (the technical plan). It has analyzed the requirements and proposed a logical sequence of engineering tasks, including creating new UI components and back end business logic. This provides immediate clarity for the development team and creates a ready-to-use backlog of work.
 
 ---
 
@@ -119,7 +119,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 **Action:** First, enter the following prompt into the chat:
 
-> Based on the PRD, and using the vitest framework, create a new test file at `src/ai/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
+> Based on the PRD, and using the vitest framework, create a new test file at `src/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
 
 **(Wait for the AI to generate the new test file, and be sure to save it.)**
 
@@ -139,7 +139,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **Action:** Enter the following prompt:
 
-> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/ai/flows/tests/debt-calculator.test.ts` pass. Replace the "Your Personal Finance Experience Goes Here" placeholder widget with the new component.
+> Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/flows/tests/debt-calculator.test.ts` pass. Replace the "Your Personal Finance Experience Goes Here" placeholder widget with the new component.
 
 **(Wait for the AI to generate the code changes.)**
 
@@ -147,7 +147,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 ### Step 6: Validate and Identify Issues
 
-After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer and quality assurance lead. We use our test plan from Step 5 to validate the implementation.
+After the AI has implemented the feature, the developer's role shifts to that of a senior reviewer.  Is everytihng working? Are improvements needed to the structure of the code to improve performance or maintainability? 
 
 **Action:** Manually walk through the test cases defined in `docs/debt-calculator-tests.md`. You will likely find that some functionality is missing or incorrect. As you refine, follow the same basic process. (1) Update the PRD and/or the technical plan if you are changing the way the feature works, (2) Update the tests if they are incomplete or did not catch the issue you identified, and (3) Update the implementation so that the tests succeed.
 
