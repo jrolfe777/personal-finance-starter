@@ -141,7 +141,7 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 > Now, follow the plan in `docs/debt-calculator-plan.md` and implement the Debt Payoff Calculator feature. Make the tests in `src/flows/tests/debt-calculator.test.ts` pass. Replace the "Your Personal Finance Experience Goes Here" placeholder widget with the new component.
 
-**(Wait for the AI to generate the code changes.)**
+**(Wait for the AI to generate the code changes. Note that when the agent runs tests in firebase, you may need to press a key in the terminal as tests complete in order to signal that completion back to the agent)**
 
 **Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). This step transforms hours or days of coding into a few minutes of AI-driven execution.
 

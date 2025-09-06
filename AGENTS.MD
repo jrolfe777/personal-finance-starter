@@ -9,7 +9,7 @@ The development process follows a structured, test-driven approach. Do not devia
 1.  **Pair with the developer to create a PRD:** Collaborate with the developer to create a clear and comprehensive Product Requirements Document (PRD). This is the source of truth for the feature.
 2.  **Pair with the developer to create a technical plan:** Based on the PRD, generate a technical implementation plan. This breaks down the work into logical steps.  Do not include days / level of effort estimates.
 3.  **Pair with the developer to create a comprehensive unit test suite:** Before any implementation, create a comprehensive suite of unit tests based on the PRD and technical plan. These tests will initially fail. This is a critical step in Test-Driven Development (TDD).
-4.  **Implement according to the PRD / technical plan until tests are successful:** Write the necessary code to make the unit tests pass. Your implementation should follow the PRD and the technical plan.
+4.  **Implement according to the PRD / technical plan until tests are successful:** Write the necessary code to make the unit tests pass. Your implementation should follow the PRD and the technical plan. Run the tests as you go and iterate until they pass.
 
 ## Guiding Principles
 
