@@ -6,17 +6,17 @@ This document outlines best practices for working effectively with AI coding ass
 
 | Don't | Do |
 |-------|-----|
-| Rely on the AI's internal knowledge. | **Provide relevant context from a known good source of truth. Provide examples!** |
+| Rely on the AI's internal knowledge. | Provide relevant context from a known good source of truth. Provide examples! |
 | Give vaguely defined tasks and let the AI "fill in the blanks." | Work with the AI to generate requirements, design, and a task list. |
-| Treat your prompt context as ephemeral, lost forever when you close your IDE's chat window. | **Treat the context you create as an asset in your repository, committed adjacent to the code its used to produce.** |
-| Have long chat sessions performing multiple unrelated tasks. | **Have AI track work completed and to do, start new sessions focused on specific tasks using docs and code as context.** |
-| Waste time trying to talk the AI into getting back on the right track. | **Learn to recognize when the AI has gotten off track, and take control. Checkpoints are your friend!** |
-| Use settings which give the AI a lot of autonomy, especially for potentially destructive tasks. | **Be an active participant or "shoulder surfer", approving actions or changes.** |
-| Accept AI-generated code without testing it. | **Always test AI-generated code thoroughly, including edge cases.** |
-| Commit large AI-generated changes without review. | **Review and commit AI changes in small, logical chunks with clear commit messages.** |
-| Share sensitive data (API keys, passwords, personal info) in prompts. | **Be mindful of data privacy and use placeholder values for sensitive information.** |
-| Use AI for critical security or performance-sensitive code without expert review. | **Have human experts review AI-generated code for security vulnerabilities and performance implications.** |
-| Expect AI to understand your entire codebase without explicit context. | **Provide relevant code snippets, documentation, and architectural context.** |
+| Treat your prompt context as ephemeral, lost forever when you close your IDE's chat window. | Treat the context you create as an asset in your repository, committed adjacent to the code its used to produce. |
+| Have long chat sessions performing multiple unrelated tasks. | Have AI track work completed and to do, start new sessions focused on specific tasks using docs and code as context. |
+| Waste time trying to talk the AI into getting back on the right track. | Learn to recognize when the AI has gotten off track, and take control. Checkpoints are your friend! |
+| Use settings which give the AI a lot of autonomy, especially for potentially destructive tasks. | Be an active participant or "shoulder surfer", approving actions or changes. |
+| Accept AI-generated code without testing it. | Always test AI-generated code thoroughly, including edge cases. |
+| Commit large AI-generated changes without review. | Review and commit AI changes in small, logical chunks with clear commit messages. |
+| Share sensitive data (API keys, passwords, personal info) in prompts. | Be mindful of data privacy and use placeholder values for sensitive information. |
+| Use AI for critical security or performance-sensitive code without expert review. | Have human experts review AI-generated code for security vulnerabilities and performance implications. |
+| Expect AI to understand your entire codebase without explicit context. | Provide relevant code snippets, documentation, and architectural context. |
 
 ## Key Principles
 
