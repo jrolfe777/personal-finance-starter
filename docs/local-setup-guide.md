@@ -21,17 +21,14 @@ If the command is not found or shows a version lower than 20, follow the Node.js
 
 ### Option 1: Using Node Version Manager (nvm) - Recommended
 
-Node Version Manager allows you to install and switch between multiple Node.js versions easily.
+Node Version Manager allows you to install and switch between multiple Node.js versions easily.  *Note - this is the canonical way to install nvm/node at CK, and might differ from typical Intuit instructions*
 
 1. **Install nvm** by running this command in your terminal:
    ```bash
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
    ```
 
-2. **Restart your terminal** or run:
-   ```bash
-   source ~/.zshrc
-   ```
+2. **Restart your terminal** 
 
 3. **Install Node.js 20**:
    ```bash
