@@ -7,8 +7,8 @@ Vibe coding — starting with a vague idea and then YOLO-generating code until i
  We'll walk through an example workflow using an AI assistant as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
 This workshop offers two setup options:
-1. **Local IDE (Recommended)** - Using Cursor with Claude Sonnet 4 for superior model quality and stability
-2. **Firebase Studio** - Cloud-based option using Gemini for those who want to use a browser-based environment (and might not have a)
+1. **Local IDE (Best Experience)** - Using Cursor with Claude Sonnet 4 for superior model quality and stability (requires Node.js and Cursor)
+2. **Firebase Studio** - Cloud-based option using Gemini for those who want to use a browser-based environment and/or dont have the needed dependencies (Node.js and Cursor)
 
 We will build a new "Debt Payoff Calculator" feature for our personal finance application. Pay close attention to how we use simple, conversational prompts to generate product requirements, create a test driven implementation plan, and write production-ready code.
 
@@ -20,9 +20,9 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
-Choose your preferred development environment. The **Local IDE option is recommended** for superior model quality and stability.
+Choose your preferred development environment. The **Local IDE option has for superior model quality and stability**, but may require too much setup if you dont have Node installed already.  
 
-### Option A: Local IDE Setup (Recommended)
+### Option A: Local IDE Setup (Best Experience)
 
 **Prerequisites:** You'll need Node.js 20+ and Cursor installed. If you don't have these, see our [Local Setup Guide](./local-setup-guide.md) first.
 
@@ -34,7 +34,6 @@ Choose your preferred development environment. The **Local IDE option is recomme
 
 2. **Open the project** in Cursor by either:
    - Opening Cursor and using File → Open Folder to select the cloned directory
-   - Or running `cursor .` from within the project directory
 
 3. **Install dependencies** by opening a terminal in Cursor and running:
    ```bash
