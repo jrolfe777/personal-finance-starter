@@ -22,7 +22,7 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
-Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but may require too much setup if you dont have Node installed already.  
+Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but requires Node.js and Cursor installation.  
 
 ### Option A: Local IDE Setup (Best Experience)
 
