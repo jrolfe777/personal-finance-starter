@@ -2,6 +2,16 @@
 
 This guide will help you set up your local development environment for the Personal Finance Workshop using Cursor and Node.js.
 
+## Xcode Command Line Tools Installation
+
+You'll need to have Xcode Command Line Tools installed first. This can be installed via the Intelligent Hub app (on Intuit laptops) or the Self Service app (on CK laptops).
+
+To check if Xcode Command Line Tools are already installed, run this command in your terminal:
+```bash
+xcode-select --version
+```
+
+If you see a version number, you're ready to proceed. If not, install it using the appropriate app for your laptop type.
 
 ## Cursor Installation
 
