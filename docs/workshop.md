@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. **However, velocity benefits and output quality quickly erode at scale**. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniquees we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
+Vibe coding — starting with a vague idea and then YOLO-generating code until it feels right - can be a ton of fun and has a wow factor when you first start. **However, velocity benefits and output quality quickly erode at scale**. How can we bridge the gap between vibe coding and professional engineering practices that harness AI driven acceleration? This workshop demonstrates some of the techniques we've been finding effective. Structured mechanisms for goal setting. Context as an asset. A test driven development mindset that creates a foundation in validation.
 
  We'll walk through an example workflow using an AI assistant as a collaborative partner, transforming intuition into a structured, accelerated, and professional process. We'll see how the AI can fulfill the roles of a product manager, a tech lead, and a pair programmer.
 
@@ -22,7 +22,7 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
-Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but may require too much setup if you dont have Node installed already.  
+Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but requires Node.js and Cursor installation.  
 
 ### Option A: Local IDE Setup (Best Experience)
 
@@ -34,8 +34,8 @@ Choose your preferred development environment. The **Local IDE option has superi
    cd personal-finance-starter
    ```
 
-2. **Open the project** in Cursor by either:
-   - Opening Cursor and using File → Open Folder to select the cloned directory
+2. **Open the project**
+   - Open Cursor and use File → Open Folder to select the cloned directory
 
 3. **Install dependencies** by opening a terminal in Cursor and running:
    ```bash
