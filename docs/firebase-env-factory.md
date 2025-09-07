@@ -22,9 +22,9 @@ Instructions for workshop team members to create pre-packaged Firebase Studio en
 - Add the duplicate's link to the spreadsheet
 - Repeat as needed for multiple workshop sessions
 
-### 4. Share with Joel and Gonzalo
+### 4. Share with Joel, Chang, and Gonzalo
 - Use the same **`...` menu** and choose **"Share"**
-- Add Joel and Gonzalo to the list
+- Add Joel Rolfe, Chang Liu, and Gonzalo Solis to the list
 - This will allow us to assign the environments later
 
 ## Notes
