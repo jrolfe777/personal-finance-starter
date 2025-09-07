@@ -22,6 +22,11 @@ Instructions for workshop team members to create pre-packaged Firebase Studio en
 - Add the duplicate's link to the spreadsheet
 - Repeat as needed for multiple workshop sessions
 
+### 4. Share with Joel and Gonzalo
+- Use the same **`...` menu** and choose **"Share"**
+- Add Joel and Gonzalo to the list
+- This will allow us to assign the environments later
+
 ## Notes
 - You can share environments with specific participants by email using the **`...` menu → Share** option
 - Each pre-packaged environment saves participants ~5-10 minutes of setup time
