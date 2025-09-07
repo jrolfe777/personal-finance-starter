@@ -22,11 +22,11 @@ We will build a new "Debt Payoff Calculator" feature for our personal finance ap
 
 ## Personal Finance Starter App: Initial Setup (5 minutes)
 
-Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but requires Node.js and Cursor installation.  
+Choose your preferred development environment. The **Local IDE option has superior model quality and stability**, but requires Node.js and Cursor installation. Firebase Studio can be used for a browser based experience. 
 
 ### Option A: Local IDE Setup (Best Experience)
 
-**Prerequisites:** You'll need Node.js 20+ and Cursor installed. If you don't have these, see our [Local Setup Guide](./local-setup-guide.md) first.
+**Prerequisites:** You'll need Node.js 20+ and Cursor installed.  These can both be installed via the Intelligent Hub on Intuit Laptops.  See [Local Setup Guide](./local-setup-guide.md) for detailed instructions.
 
 1. **Clone the repository** to your desired location:
    ```bash
