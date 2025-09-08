@@ -58,11 +58,13 @@ Choose your preferred development environment. The **Local IDE option has superi
 1. Navigate to [studio.firebase.google.com](https://studio.firebase.google.com).
 2. Choose the **"Import Repo"** option.
 3. Import the starter project from the following URL: `https://github.com/jrolfe777/personal-finance-starter`
-4. Once the import process completes, click the **"Switch to Code"** button in the upper-right corner.
-5. In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
-6. In the terminal that appears at the bottom, type the command `npm install` and press Enter.
-7. Wait for the installation to complete - it will take 3-4 minutes. Once the terminal command prompt is back, click "Try Again" in the web preview pane on the right, and the app will start and display after about 1 minute. 
-8. Click the "Open in New Window" button in the web preview's toolbar and orient yourself with the layout of the starter app.
+
+> ⚠️ **NOTE:** It is normal to see errors after importing and until you perform the rest of the steps below.
+
+4. In the file explorer on the left, right-click the `package.json` file and select **"Open in Integrated Terminal"**.
+5. In the terminal that appears at the bottom, type the command `npm install` and press Enter.
+6. Wait for the installation to complete - it will take 3-4 minutes. Once the terminal command prompt is back, click "Try Again" in the web preview pane on the right, and the app will start and display after about 1 minute. 
+7. Click the "Open in New Window" button in the web preview's toolbar and orient yourself with the layout of the starter app.
 ---
 
 ## Part 1: The AI as a Product Manager (6 minutes)
