@@ -105,7 +105,9 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 **Action:** Enter the following prompt:
 
-> Based on the PRD at docs/debt-calculator.md, create a technical implementation plan in a new file named docs/debt-calculator-plan.md. Break down the work into discrete steps for our existing Next.js app.  Once this plan is created STOP and I'll review it.
+> Based on the PRD at docs/debt-calculator.md, create a technical implementation plan in a new file named docs/debt-calculator-plan.md. Break down the work into discrete steps for our existing Next.js app.   **Important for debt calculation logic**: Use a simple month-by-month simulation approach. Avoid complex financial formulas - keep the math straightforward and iterative.  Once this plan is created STOP and I'll review it.
+
+**⚠️ Note:** Notice the explicit instructions given around debt calculation logic.  This was added because Gemini will sometimes *really* struggle and go down weird rabbit holes when implementing these calculations. Claude does not seem to have this problem.
 
 **(Wait for the AI to generate the new plan file, and be sure to save the file.)**
 
@@ -121,7 +123,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 **Action:** First, enter the following prompt into the chat:
 
-> Based on the PRD, and using the vitest framework, create a new test file at `src/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the "Debt Payoff Calculator" flow. These tests should cover the core logic defined in the acceptance criteria. The tests will obviously fail since the implementation doesn't exist yet.
+> Based on the PRD, create a new test file at `src/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the for the core business logic.  Use the existing vitest framework and avoid adding any new dependencies. The tests will obviously fail since the implementation doesn't exist yet. Do NOT test UI interactions or component rendering.
 
 **(Wait for the AI to generate the new test file, and be sure to save it.)**
 
@@ -145,7 +147,9 @@ We will give the AI a single, high-level command to execute the plan it created.
 
 **(Wait for the AI to generate the code changes. Note that when the agent runs tests in firebase, you may need to press a key in the terminal as tests complete in order to signal that completion back to the agent)**
 
-**Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). This step transforms hours or days of coding into a few minutes of AI-driven execution.
+> ⚠️ **NOTE:** AI is non-deterministic.  Sometimes it gets this right the first time, but often it makes mistakes and needs guidance. If, for example, you get an ECMAScript error displayed instead of the app, copy the error into chat and ask the agent to try to fix it!  You might even have to remind it to add the new experience to the UX!
+
+**Takeaway:** This is the core of AI-accelerated development. The AI is not just writing isolated snippets; it is implementing a full-stack feature by creating and modifying multiple files across the codebase. It understands the component structure, the server-side action and flow architecture, and the UI library (React/ShadCN). Also core to process is the agent / human collaboration.  
 
 ### Step 6: Validate and Identify Issues
 
