@@ -105,7 +105,7 @@ Now, let's switch hats from product to engineering. A good tech lead translates 
 
 **Action:** Enter the following prompt:
 
-> Based on the PRD at docs/debt-calculator.md, create a technical implementation plan in a new file named docs/debt-calculator-plan.md. Break down the work into discrete steps for our existing Next.js app.
+> Based on the PRD at docs/debt-calculator.md, create a technical implementation plan in a new file named docs/debt-calculator-plan.md. Break down the work into discrete steps for our existing Next.js app.  Once this plan is created STOP and I'll review it.
 
 **(Wait for the AI to generate the new plan file, and be sure to save the file.)**
 
