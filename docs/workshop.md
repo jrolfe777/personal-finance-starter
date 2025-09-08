@@ -123,7 +123,7 @@ With a solid plan in place, we now shift to a test-driven mindset. Before writin
 
 **Action:** First, enter the following prompt into the chat:
 
-> Based on the PRD, create a new test file at `src/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the for the core business logic.  Use the existing vitest framework and avoid adding any new dependencies. The tests will obviously fail since the implementation doesn't exist yet. Do NOT test UI interactions or component rendering.
+> Based on the PRD, create a new test file at `src/flows/tests/debt-calculator.test.ts` with a suite of failing unit tests for the for the core business logic.  Use the existing vitest framework and avoid adding any new dependencies. The tests will obviously fail since the implementation doesn't exist yet. Do NOT test UI interactions or component rendering.  Once the tests are created STOP and I'll review them.
 
 **(Wait for the AI to generate the new test file, and be sure to save it.)**
 
